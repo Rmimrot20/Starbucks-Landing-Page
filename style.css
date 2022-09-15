@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    display: inline;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox h2{
+    font-size: 4em;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.4em;
+}
+
+.content .textbox h2 span{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #017143;
+}
+
+.content .textbox p{
+    color: #333;
+}
+
+.content .textbox a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    background: #017143;
+    margin-top: 20px;
+}
+
+.content .imgbox {
+    width: 600px;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgbox img {
+    max-width: 340px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%); 
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
